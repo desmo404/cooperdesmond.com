@@ -1,0 +1,84 @@
+/* All text black */
+:root {
+  --bs-body-color: #000;
+  --bs-heading-color: #000;
+  --bs-link-color: #000;
+  --bs-link-color-rgb: 0, 0, 0;
+  --bs-link-hover-color: #000;
+  --bs-link-hover-color-rgb: 0, 0, 0;
+}
+
+body,
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+a:not(.btn) {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Header: headshot beside name, bio, and links */
+.hero {
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+
+.headshot {
+  width: 100%;
+  max-width: 16rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .headshot {
+    max-width: 10rem;
+  }
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.affiliation {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  margin: 0 0.35rem 0.35rem 0;
+  --bs-btn-color: #000;
+  --bs-btn-border-color: #000;
+  --bs-btn-hover-bg: #000;
+  --bs-btn-hover-border-color: #000;
+  --bs-btn-hover-color: #fff;
+}
+
+/* Section headings with a thin black rule */
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+/* Publication entries: title at full size, authors and venue a bit smaller */
+.pub {
+  margin-bottom: 1.75rem;
+}
+
+.pub > p:first-child {
+  font-size: 0.875em;
+}
+
+.pub > p:first-child > strong:first-child {
+  font-size: 1.1429em; /* back to body size inside the 0.875em paragraph */
+}
+
+.pub p:last-child {
+  margin-bottom: 0;
+}
